@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مطبخ جوي - حيث يلتقي الطعم بالراحة</title>
+    <title>Where Homemade Meets Restaurant Style</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -74,7 +74,7 @@
     <nav class="bg-red-600 text-white shadow-lg">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center py-4">
-                <div class="text-2xl font-bold">مطبخ جوي</div>
+                <div class="text-2xl font-bold">joey'skitchen</div>
                 <div class="hidden md:flex space-x-4 space-x-reverse">
                     <button onclick="showPage('home')" class="nav-link px-3 py-2 rounded hover:bg-red-700 transition">الرئيسية</button>
                     <button onclick="showPage('menu')" class="nav-link px-3 py-2 rounded hover:bg-red-700 transition">قائمة الطعام</button>
@@ -112,11 +112,11 @@
     <div id="home" class="page active">
         <!-- Hero Section -->
         <section class="relative h-96">
-            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/36d846f2-e195-4f39-88b7-981635b40b5e.png" alt="طبق رئيسي من مطبخ جوي يظهر لحم مشوي مع خضروات طازجة وتوابل ذهبية على طبق أبيض أنيق" class="w-full h-full object-cover">
+            <img src="https://github.com/youssef-elanani/Joey-s-kitchen/blob/main/images/DALL%C2%B7E%202024-09-25%2015.50.57%20-%20A%20modern%2C%20sleek%20logo%20for%20'Joey's%20Kitchen'%2C%20featuring%20warm%2C%20inviting%20colors%20like%20red%2C%20orange%2C%20and%20yellow%20to%20evoke%20hunger%20and%20appetite.%20The%20design%20inclu.png" alt="طبق رئيسي من مطبخ جوي يظهر لحم مشوي مع خضروات طازجة وتوابل ذهبية على طبق أبيض أنيق" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
                 <div class="text-center text-white px-4">
-                    <h1 class="text-4xl md:text-6xl font-bold mb-4">مطبخ جوي – حيث يلتقي الطعم بالراحة</h1>
-                    <p class="text-xl md:text-2xl">في مطبخ جوي، نقدم وجبات طازجة ولذيذة مصنوعة بحب وخبرة</p>
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Where Homemade Meets Restaurant Style</h1>
+                    <p class="text-xl md:text-2xl">At Joy's Kitchen, we serve fresh, delicious meals made with love and expertise</p>
                 </div>
             </div>
         </section>
@@ -211,10 +211,11 @@
                     <input type="text" id="menu-search" placeholder="ابحث عن طبق..." class="flex-1 px-4 py-2 border border-gray-300 rounded-lg">
                     <select id="category-filter" class="px-4 py-2 border border-gray-300 rounded-lg">
                         <option value="all">جميع الفئات</option>
-                        <option value="appetizers">المقبلات</option>
-                        <option value="main">الأطباق الرئيسية</option>
-                        <option value="desserts">الحلويات</option>
-                        <option value="drinks">المشروبات</option>
+                        <option value="pasta">المكرونات</option>
+                        <option value="Sandwiches">السندويتشات</option>
+                        <option value="maindish">الاطباق الرئيسية</option>
+                        <option value="pies">الفطائر</option>
+                        <option value="SignatureDelights">على مزاجك</option>
                     </select>
                     <select id="price-filter" class="px-4 py-2 border border-gray-300 rounded-lg">
                         <option value="all">جميع الأسعار</option>
@@ -340,7 +341,7 @@
                                 <i class="fas fa-phone text-red-600 text-xl ml-3"></i>
                                 <div>
                                     <p class="font-semibold">الهاتف:</p>
-                                    <p>+20 2 1234 5678</p>
+                                    <p>01204881867</p>
                                 </div>
                             </div>
 
@@ -550,28 +551,35 @@
     <script>
         // Sample menu data
         const menuData = {
-            appetizers: [
-                { id: 1, name: "سلطة يونانية", description: "خس، طماطم، خيار، زيتون، جبنة فيتا", price: 45, image: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2f7fd645-9329-41a2-9a62-ef93631b7bbe.png", alt: "سلطة يونانية طازجة مع خس وطماطم وخيار وزيتون أسود وجبنة فيتا" },
-                { id: 2, name: "مقرمشات الدجاج", description: "شرائح دجاج مقرمشة مع صلصة خاصة", price: 55, image: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7dd3ef4c-e378-4949-a516-e9cbc3f8a336.png", alt: "مقرمشات دجاج ذهبية مقرمشة مع صلصة باربكيو جانبية" },
-                { id: 3, name: "سمبوسة الجبن", description: "سمبوسة محشوة بالجبن والتوابل", price: 35, image: "https://placehold.co/400x300", alt: "سمبوسة ذهبية مقرمشة محشوة بجبنة دافئة وتوابل عربية" }
+            pasta: [
+                { id: 1, name: "مكرونة بشاميل", description: "طبقات من المكرونة المخبوزة مع لحم بقري متبل، مغطاة بصوص بشاميل كريمي وموزاريلا ذهبية لذيذة.", price: 89, image: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2f7fd645-9329-41a2-9a62-ef93631b7bbe.png", alt: "طبقات من المكرونة المخبوزة مع لحم بقري متبل، مغطاة بصوص بشاميل كريمي وموزاريلا ذهبية لذيذة." },
+                { id: 2, name: "مكرونة نجرسكو", description: "مكرونة غنية بقطع الدجاج الطرية، ممزوجة بصوص البشاميل الكريمي، ومغطاة بطبقة من الجبن الذائب لمذاق لا يُقاوم.", price: 85, image: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7dd3ef4c-e378-4949-a516-e9cbc3f8a336.png", alt: "مكرونة غنية بقطع الدجاج الطرية، ممزوجة بصوص البشاميل الكريمي، ومغطاة بطبقة من الجبن الذائب لمذاق لا يُقاوم." },
+                { id: 3, name: "مكرونة ماك&شيز", description: "مكرونة ماكاروني مغطاة بمزيج كريمي من جبن الشيدر والموزاريلا والبارميزان، مزينة بقطع استربس مقرمشة لمزيد من اللذة.", price: 97, image: "https://placehold.co/400x300", alt: "مكرونة ماكاروني مغطاة بمزيج كريمي من جبن الشيدر والموزاريلا والبارميزان، مزينة بقطع استربس مقرمشة لمزيد من اللذة." },
+                { id: 4, name: "مكرونة بالصلصة و بانية", description: "مكرونة ممزوجة بصلصة الطماطم الحمراء الطازجة، وعليها شرائح دجاج بانيه مقرمشة، وجبة تجمع بين الطراوة والقرمشة.", price: 80, image: "https://placehold.co/400x300", alt: "مكرونة ممزوجة بصلصة الطماطم الحمراء الطازجة، وعليها شرائح دجاج بانيه مقرمشة، وجبة تجمع بين الطراوة والقرمشة."},
+                { id: 5, name: "مكرونة بولونيز", description: "سباغيتي غنية بصلصة الطماطم المميزة، ممزوجة مع لحم بقري متبل بخلطة بهارات سرية، لمذاق إيطالي أصيل.", price: 75, image: "https://placehold.co/400x300", alt: "سباغيتي غنية بصلصة الطماطم المميزة، ممزوجة مع لحم بقري متبل بخلطة بهارات سرية، لمذاق إيطالي أصيل."},
             ],
-            main: [
-                { id: 4, name: "برجر جوي الخاص", description: "برجر لحم بقري طازج مع جبنة شيدر", price: 85, image: "https://placehold.co/400x300", alt: "برجر لحم بقري طازج مع جبنة شيدر مذوبة وخضروات طازجة" },
-                { id: 5, name: "معكرونة ألفريدو بالدجاج", description: "معكرونة كريمية مع دجاج مشوي", price: 95, image: "https://placehold.co/400x300", alt: "معكرونة ألفريدو كريمية مع شرائح دجاج مشوي وجبنة بارميزان" },
-                { id: 6, name: "ستيك اللحم", description: "ستيك لحم مشوي مع صوص الفلفل", price: 120, image: "https://placehold.co/400x300", alt: "ستيك لحم مشوي بشكل مثالي مع صوص الفلفل الأسود وخضروات مشوية" }
+            Sandwiches: [
+                { id: 6, name: "فاهيتا", description: "خبز فرنسي محشو بشرائح دجاج متبلة مع خضروات مشوية (فلفل رومي، بصل، وطماطم)، نكهة غنية في كل لقمة.", price: 40, image: "https://placehold.co/400x300", alt: "خبز فرنسي محشو بشرائح دجاج متبلة مع خضروات مشوية (فلفل رومي، بصل، وطماطم)، نكهة غنية في كل لقمة." },
+                { id: 7, name: "بانية", description: "خبز فرنسي مقرمش محشو بفيليه دجاج ذهبي اللون، مع جبنة موزاريلا ذائبة لمذاق كريمي رائع.", price: 38, image: "https://placehold.co/400x300", alt: "خبز فرنسي مقرمش محشو بفيليه دجاج ذهبي اللون، مع جبنة موزاريلا ذائبة لمذاق كريمي رائع." },
+                { id: 8, name: "كبدة", description: "شرائح كبدة متبلة بتوابل إسكندرانية فريدة، محشوة داخل خبز فرنسي طازج، ومشوية للون ذهبي شهي", price: 17, image: "https://placehold.co/400x300", alt: "شرائح كبدة متبلة بتوابل إسكندرانية فريدة، محشوة داخل خبز فرنسي طازج، ومشوية للون ذهبي شهي" },
+                { id: 9, name: "كفتة", description: " خبز فرنسي محشو بكفتة لحم متبلة بعناية، مشوية  لتجمع بين الطراوة والطعم ا المميز، مع طحينة وخضروات طازجة.", price: 43, image: "https://placehold.co/400x300", alt: " خبز فرنسي محشو بكفتة لحم متبلة بعناية، مشوية  لتجمع بين الطراوة والطعم ا المميز، مع طحينة وخضروات طازجة." },
+                { id: 10 , name: "بطاطس", description: "بطاطس مقرمشة ذهبية اللون، متبلة بشكل مثالي ومقدمة ساخنة للحصول على أقصى قدر من القرمشة", price: 15, image: "https://placehold.co/400x300", alt: "بطاطس مقرمشة ذهبية اللون، متبلة بشكل مثالي ومقدمة ساخنة للحصول على أقصى قدر من القرمشة" }
             ],
-            desserts: [
-                { id: 7, name: "تشيز كيك التوت الأحمر", description: "تشيز كيك كريمي مع طبقة توت", price: 55, image: "https://placehold.co/400x300", alt: "تشيز كيك التوت الأحمر الكريمي مع طبقة توت حمراء لامعة" },
-                { id: 8, name: "آيس كريم الفانيليا", description: "آيس كريم فانيليا مع صوص شوكولاتة", price: 40, image: "https://placehold.co/400x300", alt: "آيس كريم فانيليا كريمي مع صوص شوكولاتة ساخن ومكسرات" },
-                { id: 9, name: "كنافة بالنوتيلا", description: "كنافة مقرمشة مع حشوة نوتيلا", price: 65, image: "https://placehold.co/400x300", alt: "كنافة ذهبية مقرمشة محشوة بنوتيلا دافئة وجوز" }
+            maindish: [
+                { id: 11, name: "فراخ مشوية", description: "دجاج متبل بمزيج خاص من الأعشاب والتوابل، مشوي حتى يصبح طريًا من الداخل وذهبيًا من الخارج، يُقدم مع أرز بسمتي وطحينة.", price: 85, image: "https://placehold.co/400x300", alt: "دجاج متبل بمزيج خاص من الأعشاب والتوابل، مشوي حتى يصبح طريًا من الداخل وذهبيًا من الخارج، يُقدم مع أرز بسمتي وطحينة." },
+                { id: 12, name: "كفتة مشوية", description: " كفتة طرية مشوية ، تُقدم مع أرز بسمتي وطحينة وخبز طازج", price: 95, image: "https://placehold.co/400x300", alt: " كفتة طرية مشوية ، تُقدم مع أرز بسمتي وطحينة وخبز طازج" },
+                { id: 13, name: "ريزو", description: " أرز ريزو متبل بتوابل خاصة علية صوص مميز وقطع استربس مقرمشة، وجبة متكاملة لعشاق الطعم الغني والقرمشة.", price: 79, image: "https://placehold.co/400x300", alt: "رز ريزو متبل بتوابل خاصة علية صوص مميز وقطع استربس مقرمشة، وجبة متكاملة لعشاق الطعم الغني والقرمشة."}
             ],
-            drinks: [
-                { id: 10, name: "عصير برتقال طازج", description: "عصير برتقال طازج معقطع", price: 25, image: "https://placehold.co/400x300", alt: "كوب طويل من عصير البرتقال الطازج مع قطع برتقال" },
-                { id: 11, name: "قهوة موكا", description: "قهوة مع شوكولاتة وحليب", price: 30, image: "https://placehold.co/400x300", alt: "قهوة موكا ساخنة مع رغوة حليب وشوكولاتة مبشورة" },
-                { id: 12, name: "ميلك شيك فراولة", description: "ميلك شيك فراولة كريمي", price: 40, image: "https://placehold.co/400x300", alt: "ميلك شيك فراولة وردي كريمي مع كريمة ومثلة فراولة" }
+            pies: [
+                { id: 14, name: "فطيرة فراخ", description: "فطيرة شرقي مخبوزة بحشوة من الدجاج المتبل، مع خضروات طازجة وجبن موزاريلا ذائب، للحصول على طعم غني ومقرمش", price: 80, image: "https://placehold.co/400x300", alt: "فطيرة شرقي مخبوزة بحشوة من الدجاج المتبل، مع خضروات طازجة وجبن موزاريلا ذائب، للحصول على طعم غني ومقرمش" },
+                { id: 15, name: "مشكل جبن", description: "فطيرة شرقي محشوة بمزيج رائع من الجبن الشيدر، الموزاريلا، والتركي مع قطع المثلثات، مخبوزة حتى تصبح مقرمشة من الخارج وكريمية من الداخل.", price: 73, image: "https://placehold.co/400x300", alt: "فطيرة شرقي محشوة بمزيج رائع من الجبن الشيدر، الموزاريلا، والتركي مع قطع المثلثات، مخبوزة حتى تصبح مقرمشة من الخارج وكريمية من الداخل." }
+            ],
+             SignatureDelights: [
+                { id: 16, name: "بوب فيستا", description: "قطع دجاج بوب كورن مقرمشة، مع بطاطس ذهبية وفلفل حلو ملون، عليه صوص ريزو المميز، تجربة مليانة طعم وقوام مختلف.", price: 80, image: "https://placehold.co/400x300", alt: "قطع دجاج بوب كورن مقرمشة، مع بطاطس ذهبية وفلفل حلو ملون، عليه صوص ريزو المميز، تجربة مليانة طعم وقوام مختلف" },
+                { id: 17, name: "حواوشي", description: "عيش بلدي محشو بلحم بقري متبل، مشوي حتى يأخذ طعم الشواء الأصيل.اضافة جبنة موزاريلا 8ج", price: 25, image: "https://placehold.co/400x300", alt: "عيش بلدي محشو بلحم بقري متبل، مشوي حتى يأخذ طعم الشواء الأصيل.اضافة جبنة موزاريلا 8ج " }
             ]
         };
-
+ 
         let cart = [];
         let currentPage = 'home';
         let currentUser = null; // Stores logged-in user object { username, role }
